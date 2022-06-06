@@ -1,0 +1,52 @@
+body {
+  font-family: "Trip Sans", sans-serif;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+header img {
+  width: 190px;
+}
+
+#menu {
+  display: flex;
+  align-items: center;
+}
+
+#menu div {
+  margin-left: 30px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+#menu button {
+  background-color: black;
+  font-family: "Trip Sans", sans-serif;
+  border-radius: 20px;
+  border: solid black;
+  padding: 10px 16px;
+  color: white;
+  font-weight: 500;
+}
+
+/* MAIN */
+
+h1 {
+  font-size: 54px;
+  line-height: 64px;
+}
+
+h1 span {
+  color: #ff5d5d;
+}
