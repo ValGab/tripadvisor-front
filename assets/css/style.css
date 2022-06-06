@@ -35,10 +35,15 @@ header img {
   font-family: "Trip Sans", sans-serif;
   border-radius: 20px;
   border: solid black;
-  padding: 8px 16px;
+  padding: 10px 16px;
   color: white;
   font-weight: 500;
   font-size: 16px;
+}
+
+#menu button:hover {
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 /* MAIN */
@@ -103,6 +108,11 @@ h1 span {
   height: 430px;
 }
 
+#pictures-gallery img:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
 #pic-right {
   display: flex;
   flex-direction: column;
@@ -160,11 +170,11 @@ h1 span {
 
 #presentation {
   margin-right: 60px;
-  margin-top: 0;
 }
 
 #presentation h2 {
   font-size: 30px;
+  margin-top: 0;
 }
 
 #presentation p {
