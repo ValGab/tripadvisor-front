@@ -7,11 +7,18 @@ body {
   margin: 0 auto;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 /* HEADER */
 
 header .container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 80px;
 }
 
 header img {
@@ -51,6 +58,8 @@ header img {
 h1 {
   font-size: 54px;
   line-height: 64px;
+  font-weight: bold;
+  margin-bottom: 30px;
 }
 
 h1 span {
@@ -105,7 +114,7 @@ h1 span {
   display: flex;
   justify-content: space-between;
   padding: 30px 0;
-  height: 430px;
+  height: 432px;
 }
 
 #pictures-gallery img:hover {
@@ -120,7 +129,7 @@ h1 span {
 }
 
 #pic-left img {
-  width: 660px;
+  width: 662px;
   height: 100%;
   object-fit: cover;
 }
@@ -130,6 +139,7 @@ h1 span {
   height: 215px;
   object-fit: cover;
   object-position: top;
+  margin-bottom: 2px;
 }
 
 #navigation {
@@ -148,8 +158,6 @@ h1 span {
 }
 #breadcrumbs div a {
   margin-right: 5px;
-  text-decoration: none;
-  color: black;
 }
 
 #breadcrumbs div a:hover {
@@ -175,6 +183,8 @@ h1 span {
 #presentation h2 {
   font-size: 30px;
   margin-top: 0;
+  margin-bottom: 15px;
+  font-weight: bold;
 }
 
 #presentation p {
@@ -186,17 +196,18 @@ h1 span {
 #map {
   display: flex;
   flex-direction: column;
-  border-radius: 20px;
+  border-radius: 10px;
   background-color: #ff5d5d;
 }
 
 #text {
-  padding: 0 15px 25px 15px;
+  padding: 25px;
 }
 
 #text h3 {
   font-size: 25px;
   font-weight: 500;
+  margin-bottom: 10px;
 }
 
 #map button {
@@ -204,7 +215,8 @@ h1 span {
   font-family: "Trip Sans", sans-serif;
   border-radius: 20px;
   border: solid grey;
-  padding: 8px 16px;
+  margin-top: 18px;
+  padding: 8px 15px;
   color: white;
   font-weight: 500;
   font-size: 16px;
