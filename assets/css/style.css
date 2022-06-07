@@ -18,7 +18,23 @@ h1 {
   font-size: 54px;
   line-height: 64px;
   font-weight: bold;
-  margin-bottom: 30px;
+  margin: 30px 0 20px 0;
+}
+
+h2 {
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+section {
+  margin: 50px 0;
 }
 
 /* HEADER */
@@ -69,7 +85,6 @@ h1 span {
 
 #top-nav {
   display: flex;
-  margin-top: -20px;
   height: 68px;
 }
 
@@ -186,13 +201,6 @@ h1 span {
   flex: 1;
 }
 
-#presentation h2 {
-  font-size: 30px;
-  margin-top: 0;
-  margin-bottom: 15px;
-  font-weight: bold;
-}
-
 #presentation p {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 20px;
@@ -207,11 +215,6 @@ h1 span {
 
 #text {
   padding: 25px;
-}
-
-#text h3 {
-  font-size: 25px;
-  margin-bottom: 10px;
 }
 
 #text p {
@@ -234,4 +237,55 @@ h1 span {
   height: 60%;
   object-fit: cover;
   border-radius: 0 0 10px 10px;
+}
+
+.elements {
+  display: flex;
+  margin-top: 30px;
+}
+
+.item-description {
+  width: 265px;
+
+  margin-right: 20px;
+}
+
+.item-description p {
+  padding-bottom: 15px;
+}
+
+.item-description a {
+  text-decoration: underline;
+  line-height: 15px;
+}
+
+.carrousel {
+  display: flex;
+  flex: 1;
+  gap: 10px;
+}
+
+.carrousel div {
+  flex: 1;
+  position: relative;
+}
+
+.carrousel h4 {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.carrousel div img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.carrousel .like {
+  top: 6px;
+  right: 6px;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 8px;
+  font-size: 20px;
 }
