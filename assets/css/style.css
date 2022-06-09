@@ -37,6 +37,21 @@ section {
   margin: 50px 0;
 }
 
+.button-black {
+  background-color: black;
+  font-family: inherit;
+  border-radius: 20px;
+  border: none;
+  padding: 10px 16px;
+  color: white;
+  font-size: 16px;
+}
+
+.button-black:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
 /* HEADER */
 
 header .container {
@@ -61,20 +76,8 @@ header img {
   line-height: 20px;
 }
 
-.button-black {
-  background-color: black;
-  font-family: inherit;
-  border-radius: 20px;
-  border: none;
-  padding: 10px 16px;
-  color: white;
-  font-size: 16px;
+#menu .button-black {
   margin-left: 30px;
-}
-
-.button-black:hover {
-  opacity: 0.8;
-  cursor: pointer;
 }
 
 /* MAIN */
@@ -246,7 +249,6 @@ h1 span {
 
 .item-description {
   width: 265px;
-
   margin-right: 20px;
 }
 
@@ -263,10 +265,16 @@ h1 span {
   display: flex;
   flex: 1;
   gap: 10px;
+  overflow: hidden;
+  overflow-x: auto;
+  /* Pour masquer la barre de scroll */
+  /* -ms-overflow-style: none; /* IE and Edge */
+  /* scrollbar-width: none; */
 }
 
-.carrousel div {
-  flex: 1;
+.carrousel #place {
+  max-width: 278px;
+  flex-shrink: 0;
   position: relative;
 }
 
