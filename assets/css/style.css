@@ -61,7 +61,7 @@ header img {
   line-height: 20px;
 }
 
-#menu button {
+.button-black {
   background-color: black;
   font-family: inherit;
   border-radius: 20px;
@@ -72,7 +72,7 @@ header img {
   margin-left: 30px;
 }
 
-#menu button:hover {
+.button-black:hover {
   opacity: 0.8;
   cursor: pointer;
 }
@@ -138,24 +138,24 @@ h1 span {
   cursor: pointer;
 }
 
-#pic-left {
+.col-left {
   flex: 1;
   height: 100%;
   margin-right: 3px;
 }
 
-#pic-left img {
+.col-left img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-#pic-right {
+.col-right {
   height: 100%;
   width: 480px;
 }
 
-#pic-right img {
+.col-right img {
   width: 100%;
   height: calc(50% - (3px / 2));
   object-fit: cover;
@@ -288,4 +288,74 @@ h1 span {
   border-radius: 50%;
   padding: 8px;
   font-size: 20px;
+}
+
+.carrousel p {
+  margin-top: 5px;
+  font-size: 14px;
+  font-family: "Trip Sans Reg", sans-serif;
+}
+
+.notation {
+  display: flex;
+}
+
+.notation path {
+  fill: #00aa6c;
+}
+
+.notation span {
+  margin-left: 10px;
+  font-size: 12px;
+  font-family: "Trip Sans Reg", sans-serif;
+}
+
+#evasion {
+  display: flex;
+  background: #faf1ed;
+  height: 190px;
+  position: relative;
+}
+
+#evasion .col-left {
+  padding: 25px;
+}
+
+#evasion #wall {
+  height: 100%;
+  border-left: 2px solid white;
+  object-fit: cover;
+  object-position: center;
+}
+
+#evasion .col-right #badge {
+  position: absolute;
+  width: 80px;
+  bottom: 10px;
+  right: 10px;
+}
+
+#evasion .button-black {
+  margin: 20px 0;
+}
+
+/* FOOTER */
+footer {
+  background-color: #faf1ed;
+  height: 150px;
+}
+
+footer .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer img {
+  width: 50px;
+  margin-right: 15px;
+}
+
+footer div {
+  margin-top: 60px;
 }
