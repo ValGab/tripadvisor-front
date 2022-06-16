@@ -71,6 +71,10 @@ header {
   z-index: 1;
 }
 
+header .container > i {
+  display: none;
+}
+
 header .container {
   display: flex;
   justify-content: space-between;
@@ -327,10 +331,12 @@ h1 span {
 
 .notation {
   display: flex;
+  align-items: center;
 }
 
-.notation path {
-  fill: #00aa6c;
+.notation i {
+  font-size: 12px;
+  color: #00aa6c;
 }
 
 .notation span {
@@ -401,17 +407,118 @@ footer img {
   #top-nav {
     flex-wrap: wrap;
     align-content: space-between;
-    min-height: 120px;
+    max-height: 130px;
   }
 
   #top-nav div {
     flex: none;
-    width: 274px;
+    width: calc(25% - 10px);
+    margin-bottom: 10px;
+  }
+
+  #pictures-gallery {
+    height: 350px;
   }
 }
 
 @media (max-width: 1024px) {
+  .container {
+    margin: 0 20px;
+  }
+
   #menu div span {
     display: none;
+  }
+
+  #infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
+
+  #infos #presentation {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #infos #map {
+    width: 60%;
+  }
+}
+
+@media (max-width: 767px) {
+  #menu {
+    display: none;
+  }
+
+  header .container {
+    justify-content: space-between;
+    padding: 0 5px;
+  }
+
+  header .container > i {
+    display: flex;
+  }
+
+  #top-nav {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    overflow-x: auto;
+    /* Pour masquer la barre de scroll */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  #top-nav div {
+    margin-bottom: 0;
+    width: 250px;
+    padding: 11px 16px 8px;
+  }
+
+  #pictures-gallery .col-right {
+    display: none;
+  }
+
+  #navigation {
+    display: none;
+  }
+
+  #infos #presentation p {
+    font-size: 18px;
+  }
+
+  #infos #map {
+    width: 100%;
+  }
+
+  .elements {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .item-description {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .carrousel {
+    width: 100%;
+  }
+
+  #evasion {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  #evasion .col-right {
+    width: 100%;
+    height: 200px;
+  }
+
+  #evasion #badge {
+    height: 20%;
   }
 }
