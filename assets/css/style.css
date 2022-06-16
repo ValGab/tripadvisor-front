@@ -518,3 +518,9 @@ footer img {
     height: 20%;
   }
 }
+
+@media (max-width: 720px) {
+  .carrousel #place {
+    width: 75%;
+  }
+}
