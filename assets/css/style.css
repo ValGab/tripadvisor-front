@@ -395,8 +395,8 @@ footer img {
 }
 
 @media (max-width: 1184px) {
-  #menu {
-    margin-right: 25px;
+  .container {
+    margin: 0 20px;
   }
 
   #top-nav div:nth-child(6),
@@ -406,8 +406,8 @@ footer img {
 
   #top-nav {
     flex-wrap: wrap;
-    align-content: space-between;
     max-height: 130px;
+    margin-left: 3px;
   }
 
   #top-nav div {
@@ -422,10 +422,6 @@ footer img {
 }
 
 @media (max-width: 1024px) {
-  .container {
-    margin: 0 20px;
-  }
-
   #menu div span {
     display: none;
   }
