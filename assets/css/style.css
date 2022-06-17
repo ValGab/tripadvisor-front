@@ -162,6 +162,7 @@ h1 span {
 #pictures-gallery img:hover {
   opacity: 0.8;
   cursor: pointer;
+  transition: 100ms;
 }
 
 .col-left {
@@ -272,16 +273,17 @@ h1 span {
   margin-top: 30px;
 }
 
-.item-description {
+.section-description {
   width: 25%;
   padding-right: 20px;
 }
 
-.item-description p {
+.section-description p {
   padding-bottom: 15px;
+  font-family: "Trip sans Reg", sans-serif;
 }
 
-.item-description a {
+.section-description a {
   text-decoration: underline;
   line-height: 15px;
 }
@@ -301,6 +303,17 @@ h1 span {
   width: calc((100% - 20px) / 3);
   flex-shrink: 0;
   position: relative;
+}
+
+.carrousel #place:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  transition: 100ms;
+}
+
+.carrousel #place p:hover,
+.carrousel #place h4:hover {
+  text-decoration: underline;
 }
 
 .carrousel h4 {
@@ -340,10 +353,12 @@ h1 span {
 }
 
 .notation span {
-  margin-left: 10px;
+  margin-left: 5px;
   font-size: 12px;
   font-family: "Trip Sans Reg", sans-serif;
 }
+
+/* SECTION EVASION */
 
 #evasion {
   display: flex;
@@ -393,6 +408,8 @@ footer img {
   width: 50px;
   margin-right: 15px;
 }
+
+/* MEDIA QUERIES */
 
 @media (max-width: 1184px) {
   .container {
@@ -494,7 +511,7 @@ footer img {
     flex-direction: column;
   }
 
-  .item-description {
+  .section-description {
     width: 100%;
     margin-bottom: 20px;
   }
