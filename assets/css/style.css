@@ -62,14 +62,6 @@ i {
   font-size: 22px;
 }
 
-.disable {
-  overflow: hidden;
-}
-
-.hidden {
-  display: none;
-}
-
 /* HEADER */
 
 header {
@@ -448,6 +440,13 @@ footer a:hover {
 }
 
 /* MODAL */
+
+/* Disable scroll on body when model is open */
+/* Add to body */
+.disable {
+  overflow: hidden;
+}
+
 .modal {
   display: flex;
   background-color: rgb(0, 0, 0, 0.8);
@@ -518,6 +517,10 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: grey;
   cursor: pointer;
+}
+
+.hidden {
+  display: none;
 }
 
 /* ------------------------------------- */
