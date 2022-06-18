@@ -298,5 +298,39 @@
         </p>
       </div>
     </footer>
+
+    <div class="modal hidden">
+      <div class="form-container">
+        <div>
+          <i class="icon-times"></i>
+          <p>Formulaire de contact</p>
+
+          <form id="contact">
+            <input
+              type="text"
+              name="firstname"
+              id="firstname"
+              placeholder="Prénom"
+              autocomplete="off"
+            />
+            <input
+              type="text"
+              name="lastname"
+              id="lastname"
+              placeholder="Nom"
+            />
+            <input type="email" name="email" id="email" placeholder="Email" />
+            <textarea
+              name="description"
+              id="description"
+              rows="8"
+              cols="80"
+              placeholder="Écrivez ici votre message..."
+            ></textarea>
+            <input type="submit" value="Envoyer le formulaire" />
+          </form>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
