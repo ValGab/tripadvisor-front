@@ -523,6 +523,13 @@ input[type="submit"]:hover {
   display: none;
 }
 
+#validation {
+  font-family: "Trip Sans Reg", sans-serif;
+  font-size: 16px;
+  color: #00aa6c;
+  margin-top: 15px;
+}
+
 /* ------------------------------------- */
 /* MEDIA QUERIES */
 /* ------------------------------------- */

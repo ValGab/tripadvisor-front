@@ -9,7 +9,12 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/fonts.css" />
     <link rel="stylesheet" href="./assets/css/fonticons.css" />
+    <!-- import fichier main.js -->
     <script src="./assets/js/main.js"></script>
+
+    <!-- import de Axios -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
     <!--
       <script
       src="https://kit.fontawesome.com/a061e926c6.js"
@@ -33,7 +38,7 @@
           <div><i class="icon-pencil"></i> <span>Avis</span></div>
           <div><i class="icon-heart"></i> <span>Voyages</span></div>
           <div><i class="icon-notification_bell"></i> <span>Alertes</span></div>
-          <button class="button-black" id="contact">
+          <button class="button-black" id="contact-button">
             <span>Contactez-nous</span>
           </button>
         </nav>
@@ -333,7 +338,10 @@
             ></textarea>
             <input type="submit" value="Envoyer le formulaire" />
           </form>
-          <p class="hidden">Votre message a été envoyé</p>
+          <p class="hidden" id="validation">Votre message a été envoyé !</p>
+          <p class="hidden" id="error-form">
+            Oups, il y a un problème d'envoi !
+          </p>
         </div>
       </div>
     </div>
