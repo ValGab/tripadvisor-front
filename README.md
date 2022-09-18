@@ -4,10 +4,10 @@
 
 A single page made with HTML, CSS and Vanilla JS.
 
-<img src="./assets/img/preview/tripadvisor1.jpg" alt="tripadvisor front">
+<img src="./assets/img/preview/tripadvisor1.jpg" alt="tripadvisor front"/>
 
 ## Modal
 
 When you complete and submit the form, I receive a mail directly in my box (made with Mailgun).
 
-<img src="./assets/img/preview/tripadvisor2.jpg" alt="tripadvisor modal">
+<img src="./assets/img/preview/tripadvisor2.jpg" alt="tripadvisor modal"/>
